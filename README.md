@@ -26,15 +26,19 @@ To resolve this issue:
 
 ## Installing
 1. To use these exercise files, you must have the following installed:
-	- [list of requirements for course]
+	- Python, at least version 3.10
+	- A text editor such as Visual Studio Code, Sublime Text, Atom, or another editor
+	- JupyterLab, or another environment that can run Jupyter notebooks
+	- A Google Gemini API key from Google AI Studio
+	- [Ollama](https://ollama.com/download), for the local/private LLM exercise in chapter 5
 2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
-3. [Course-specific instructions]
+3. 3. Detailed setup instructions are available in the Chapter 00_02 -  **Course Setup and What You'll Build.**
 
 ## Instructor
 
-Instructor name
+Parul Pandey
 
-Instructor description
+Author & Data Scientist
 
                             
 
