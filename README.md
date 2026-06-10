@@ -32,7 +32,7 @@ To resolve this issue:
 	- A Google Gemini API key from Google AI Studio
 	- [Ollama](https://ollama.com/download), for the local/private LLM exercise in chapter 5
 2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
-3. 3. Detailed setup instructions are available in the Chapter 00_02 -  **Course Setup and What You'll Build.**
+3. Detailed setup instructions are available in the Chapter 00_02 -  **Course Setup and What You'll Build.**
 
 ## Instructor
 
