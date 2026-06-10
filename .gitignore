@@ -2,3 +2,11 @@
 node_modules
 .tmp
 npm-debug.log
+.venv
+.env
+_pycache__
+.ipynb_checkpoints
+__pycache__
+*.pyc
+*.pyo
+*.pyd
