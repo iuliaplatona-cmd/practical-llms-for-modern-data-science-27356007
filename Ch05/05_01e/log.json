@@ -1,0 +1,29 @@
+[
+  {
+    "timestamp": "2026-04-19T10:19:03.990238",
+    "agent_version": "1.0.0",
+    "model": "gemini-2.5-flash",
+    "question": "What are the top 10 highest paid employees?",
+    "generated_code": "result_df = df.nlargest(10, 'MonthlyIncome')",
+    "status": "success",
+    "result_shape": "(10, 25)"
+  },
+  {
+    "timestamp": "2026-04-19T10:21:00.680424",
+    "agent_version": "1.0.0",
+    "model": "gemini-2.5-flash",
+    "question": "Who are the top 5 employees closest to retirement age (65) who have never been promoted?",
+    "generated_code": "result_df = (\n    df[df['years_since_promotion'] == df['years_at_company']]\n    .assign(years_to_retirement=65 - df['age'])\n    .query('years_to_retirement > 0')\n    .sort_values(by='years_to_retirement', ascending=True)\n    .head(5)\n)",
+    "status": "success",
+    "result_shape": "(5, 26)"
+  },
+  {
+    "timestamp": "2026-04-19T10:21:02.311248",
+    "agent_version": "2.0.0",
+    "model": "gemini-2.0-flash",
+    "question": "Who are the top 5 employees closest to retirement age (65) who have never been promoted?",
+    "generated_code": "retirement_age = 65\ndf_no_promotion = df[df['years_since_promotion'] == df['years_at_company']]\ndf_no_promotion['age_difference'] = abs(retirement_age - df_no_promotion['age'])\ntop_5_closest = df_no_promotion.nsmallest(5, 'age_difference')\nresult_df = top_5_closest[['Employee ID', 'age', 'years_since_promotion']]",
+    "status": "success",
+    "result_shape": "(5, 3)"
+  }
+]
